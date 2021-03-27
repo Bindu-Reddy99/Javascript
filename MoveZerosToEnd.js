@@ -18,7 +18,15 @@ function pushZerosToEnd(arr, n)
 }
  
 // Driver code
-    let arr = [1, 2, 0, 1, 0, 1, 0, 3, 0, 1];
+    //let arr = [1, 2, 0, 1, 0, 1, 0, 3, 0, 1];
+var arr = [];
+var size = 5; //Maximum Array size
+
+for(var i=0; i<size; i++) {
+	
+	//Taking Input from user
+	arr[i] = prompt('Enter Element ' + (i+1));
+}
     
     pushZerosToEnd(arr, arr.length);
     document.write("Array after pushing all zeros to end of array :<br>");
