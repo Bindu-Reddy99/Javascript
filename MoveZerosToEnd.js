@@ -18,7 +18,7 @@ function pushZerosToEnd(arr, n)
 }
  
 // Driver code
-    let arr = [1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0, 9];
+    let arr = [1, 2, 0, 1, 0, 1, 0, 3, 0, 1];
     
     pushZerosToEnd(arr, arr.length);
     document.write("Array after pushing all zeros to end of array :<br>");
