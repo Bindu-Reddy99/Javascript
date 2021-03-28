@@ -4,20 +4,20 @@ var outputInfo = document.getElementById("reverseLengthString");
 function reverseLenString() {
   var s = document.getElementById("inputText").value;
   var result = "";
-  var splittedString = s.split("");
-  for (var i = 0; i < splittedString; i++) {
-    if (s) {
-      result += "";
+  var splittedString = s.split(" ");
+  for (var i = 0; i < splittedString.length; i++) {
+    if (result) {
+      result += ' ';
     }
-    if (result[i.length >= 5]) {
-      result += result[i].split("").reverse().join("");
+    if (splittedString[i].length >= 5) {
+      result += splittedString[i].split("").reverse().join("");
       //  result+=reversedlenString(result[i])
     } else {
-      result += result[i];
+      result += splittedString[i];
     }
   }
-  afterResult = result;
-  outputInfo.innerHTML = "After removing vowels in the String = " + afterResult;
+ 
+  outputInfo.innerHTML = "After removing vowels in the String = " + result;
   //return result;
   // var res = s.split(" ");
 
@@ -37,3 +37,4 @@ function reverseInnerString(res) {
 }
 
 reverseLenthWordBtn.addEventListener("click", reverseLenString());
+
